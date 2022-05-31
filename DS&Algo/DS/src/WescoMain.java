@@ -6,9 +6,11 @@ import java.util.stream.Collectors;
 class Employee {
     private final Integer eId;
     private final String eName;
-    Employee(Integer eId, String eName) {
+    private final String companyName;
+    Employee(Integer eId, String eName, String companyName) {
         this.eId = eId;
         this.eName = eName;
+        this.companyName = companyName;
     }
 
     @Override
@@ -26,6 +28,10 @@ class Employee {
     public String geteName() {
         return eName;
     }
+
+    public String getCompanyName() {
+        return companyName;
+    }
 }
 
 public class WescoMain {
@@ -38,11 +44,11 @@ public class WescoMain {
         //Capital casing
         //Sort by name ascending
         //List
-        Employee e1 = new Employee(1, "Test1");
-        Employee e2 = new Employee(100, "Adam");
-        Employee e3 = new Employee(102, "Batman");
-        Employee e4 = new Employee(10, "Chris");
-        Employee e5 = new Employee(1012, "someName");
+        /*Employee e1 = new Employee(1, "Test1", companyName);
+        Employee e2 = new Employee(100, "Adam", companyName);
+        Employee e3 = new Employee(102, "Batman", companyName);
+        Employee e4 = new Employee(10, "Chris", companyName);
+        Employee e5 = new Employee(1012, "someName", companyName);
 
         List<Employee> employeeList = Arrays.asList(e1, e2, e3, e4, e5);
         List<String> filteredList =
@@ -52,7 +58,7 @@ public class WescoMain {
                         .map(w -> w.geteName().toUpperCase())
                         .collect(Collectors.toList());
 
-        System.out.println(filteredList);
+        System.out.println(filteredList);*/
 
     }
 }
