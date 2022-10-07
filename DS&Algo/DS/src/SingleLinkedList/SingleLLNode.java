@@ -2,28 +2,31 @@ package SingleLinkedList;
 
 public class SingleLLNode {
 
-        private Integer data;
-        private SingleLLNode next;
+    private Integer data;
+    private SingleLLNode next;
 
-        public SingleLLNode(Integer data, SingleLLNode o) {
-            this.data = data;
-            this.next = o;
-        }
+    public SingleLLNode(Integer data, SingleLLNode o) {
+        this.data = data;
+        this.next = o;
+    }
 
-        public Integer getData() {
-            return data;
-        }
+    public SingleLLNode() {
+    }
 
-        public void setData(Integer data) {
-            this.data = data;
-        }
+    public Integer getData() {
+        return data;
+    }
 
-        public SingleLLNode getNext() {
-            return next;
-        }
+    public void setData(Integer data) {
+        this.data = data;
+    }
 
-        public void setNext(SingleLLNode next) {
-            this.next = next;
-        }
+    public SingleLLNode getNext() {
+        return next;
+    }
+
+    public void setNext(SingleLLNode next) {
+        this.next = next;
+    }
 
 }
